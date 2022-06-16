@@ -1,19 +1,18 @@
 import { useEffect } from 'react';
 import { Link, useNavigate } from "react-router-dom";
+import Header from '../directives/header';
+import Footer from '../directives/footer';
 
 
 const EditProfile = () => {
     useEffect(() => {
     },[])
 
-  let navigate = useNavigate(); 
-//   const routeChange = () =>{ 
-//     let path = `dashboard`; 
-//     navigate(path);
-  
 return (
     <>
+
 <div className="container-fluid">
+<Header/>
 <div className="row justify-content-center">
   <div className="col-lg-12">
     <div className="card">
@@ -136,7 +135,9 @@ return (
     </div>
   </div>
 </div>
+<Footer/>
 </div>
+
     </>
 );
 }

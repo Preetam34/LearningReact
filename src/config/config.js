@@ -1,4 +1,4 @@
 const config = {
-    baseUrl:'/login/',
+    baseUrl:'/my-first-app/',
 };
 export default config;

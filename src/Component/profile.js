@@ -1,19 +1,16 @@
 import { useEffect } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import config from '../config/config';
-
+import Footer from '../directives/header';
+import Header from '../directives/footer';
 const Profile = () => {
     useEffect(() => {
     },[])
 
-  let navigate = useNavigate(); 
-//   const routeChange = () =>{ 
-//     let path = `dashboard`; 
-//     navigate(path);
-  
 return (
     <>
   <div className="content-body" style={{minHeight: '788px'}}>
+  <Header/>
         <div className="row page-titles mx-0">
           <div className="col p-md-0">
             <ol className="breadcrumb">
@@ -160,6 +157,7 @@ return (
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     </>
 );
